@@ -1,0 +1,7 @@
+library(cluster)
+X11()
+x<-rbind(matrix(rnorm(100, sd = 0.3), ncol = 2), matrix(rnorm(100, mean = 1, sd = 0.3), ncol = 2))
+cl<-kmeans(x, 3, 20)
+plot(x, col = cl$cluster)
+points(cl$centers, col = 1:2, pch = 8)
+Sys.sleep(10)

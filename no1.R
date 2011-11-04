@@ -1,4 +1,4 @@
-X11()
+#X11()
 characters<-c('Ami Hutami', 'Makoto Kikuchi', 'Iori Minase', 'Miki Hosii', 'Yukiho Ogiwara', 'Azusa Miura', 'Chihaya Kisaragi')
 d<-matrix(c(0, 3, 5.5, 5, 3, 6, 8,
             3, 0, 2, 4.5, 5.6, 0.3, 3.1,
@@ -11,4 +11,4 @@ x<-loc[,1]
 y<-loc[,2]
 plot(x, y, type="n")
 text(x, y, characters)
-Sys.sleep(10)
+#Sys.sleep(10)
